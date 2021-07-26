@@ -1,0 +1,15 @@
+.superInput {
+    outline: transparent;
+    background-color: violet;
+    color: white;
+}
+ 
+.errorInput {
+    border: 3px solid lime;
+    background: red;
+    outline: transparent;
+}
+
+.error {
+    color: red;
+}
