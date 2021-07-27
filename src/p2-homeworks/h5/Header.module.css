@@ -1,0 +1,52 @@
+/* .navbar{
+    width: 30px;
+    height: 2px;
+    background-color: green;
+}
+
+.inner{
+    display: none;
+}
+
+.navbar:hover .inner{
+    display: block;
+} */
+
+.navbar{
+    position: relative;
+    height: 30px;
+
+} 
+
+.inner:hover{
+    /* left: 0; */
+    transition: 1.5s;
+    transform: translateX(0);
+}
+
+.button{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    margin-left: 10px;
+    position: relative;
+}
+
+.inner{
+    display: inline-block;
+    position: absolute;
+    transition: 1s;
+    transform: translateX(calc(-100% + 25px));
+
+}
+
+a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    color: red
+}
