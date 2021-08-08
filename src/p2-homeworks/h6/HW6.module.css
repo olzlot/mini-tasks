@@ -1,0 +1,17 @@
+.SuperEditableSpan{
+    display: inline-block;
+    border-bottom: 1px dashed black;
+    cursor: pointer;
+    outline: none;
+    color: blue;
+}
+.SuperEditableSpan::before{
+    content: "✎";
+    color: rgb(199, 92, 4);
+    margin-right: 15px;
+}
+
+.HW6{
+    margin: 10px; 
+     padding: 3px;
+}
