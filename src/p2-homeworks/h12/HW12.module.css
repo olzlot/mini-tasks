@@ -5,13 +5,19 @@
 .dark-text {
     color: aliceblue;
 }
+.ligth-text {
+    color: aliceblue;
+}
 
 .red {
     background: lightcoral;
 }
 
 .red-text {
-    color: aqua;
+    color: black;
+}
+.black-text {
+    color: black;
 }
 
 .some {
@@ -19,5 +25,13 @@
 }
 
 .some-text {
-    color: darkslateblue;
+    color: aqua;
+}
+.blue-text {
+    color: aqua;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
 }

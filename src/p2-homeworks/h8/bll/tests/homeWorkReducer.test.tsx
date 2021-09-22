@@ -5,7 +5,7 @@ let initialState: any[] // need to fix any
 
 beforeEach(() => {
     initialState = [
-        {_id: 0, name: 'Кот', age: 3},
+        {_id: 0, name: 'Кот', age: 3}, 
         {_id: 1, name: 'Александр', age: 66},
         {_id: 2, name: 'Коля', age: 16},
         {_id: 3, name: 'Виктор', age: 44},
@@ -17,16 +17,20 @@ beforeEach(() => {
 test('sort name up', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'up'})
 
-    console.log(newState)
-    // expect(...).toBe(...)
+   
+    expect(newState[0].name).toBe('Александр')
+    expect(newState.length).toBe(initialState.length)
+    expect(typeof newState).toBe(typeof initialState)
 })
 test('sort name down', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'down'})
-
+    expect(newState[0].name).toBe('Кот')
 
 })
 test('check age 18', () => {
     const newState = homeWorkReducer(initialState, {type: 'check', payload: 18})
 
+    expect(newState[0].age).toBeGreaterThanOrEqual(18)
+    expect(newState.length).not.toBe(initialState.length)
 
 })
